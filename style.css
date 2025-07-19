@@ -1,0 +1,750 @@
+/* --- Root Variables for Colors, Spacing, and Typography --- */
+:root {
+    /* Colors */
+    --primary-color: #38b2ac; /* A slightly richer teal for brand focus */
+    --secondary-color: #63b3ed; /* A calming blue for accents */
+    --accent-color: #fc7c42; /* A vibrant orange for highlights/hover */
+    --dark-text-color: #2c3e50; /* Darker charcoal for main text */
+    --medium-text-color: #5d6d7e; /* Softer grey for secondary text */
+    --light-text-color: #ecf0f1; /* Off-white for text on dark backgrounds */
+    --white-color: #ffffff;
+    --light-bg-color: #f8f8f8; /* Off-white background for cards/header */
+    --hover-bg-color: #e6e6e6; /* Light grey for hover effects */
+    --border-color: #e0e0e0; /* Light grey for borders */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
+    --shadow-strong: rgba(0, 0, 0, 0.25);
+
+    /* Spacing */
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-small: 15px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 60px;
+
+    /* Typography */
+    --font-body: 'Segoe UI', Arial, sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-size-base: 16px;
+    --font-size-small: 0.9rem;
+    --font-size-medium: 1.1rem;
+    --font-size-large: 1.8rem;
+    --font-size-xl: 2.5rem;
+
+    /* Border Radii */
+    --border-radius-small: 8px;
+    --border-radius-medium: 12px;
+    --border-radius-large: 20px;
+
+    /* Transitions */
+    --transition-speed-fast: 0.2s;
+    --transition-speed-medium: 0.4s;
+    --transition-speed-slow: 0.6s;
+}
+
+/* --- Reset & Base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--font-body);
+    color: var(--dark-text-color);
+    line-height: 1.6;
+    transition: background-color var(--transition-speed-medium) ease;
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--light-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--spacing-small);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius-small);
+    box-shadow: 0 4px 15px var(--shadow-light);
+    position: sticky;
+    top: var(--spacing-small);
+    z-index: 1000;
+    flex-wrap: wrap;
+    gap: var(--spacing-small);
+}
+
+header img {
+    height: 45px;
+    transition: transform var(--transition-speed-fast) ease;
+}
+
+header img:hover {
+    transform: scale(1.08);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-large);
+    align-items: center; /* Align items vertically in the center */
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--dark-text-color);
+    font-weight: 600;
+    transition: color var(--transition-speed-fast) ease, transform var(--transition-speed-fast) ease;
+    padding: var(--spacing-xxs) 0;
+    position: relative;
+}
+
+nav li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width var(--transition-speed-fast) ease-out;
+}
+
+nav li a:hover::after,
+nav li a:focus::after {
+    width: 100%;
+}
+
+nav li a:hover,
+nav li a:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
+/* Style for the new search icon in nav */
+.nav-search-icon {
+    font-size: 1.5rem; /* Adjust size as needed */
+    padding: 0; /* Remove default padding for link text */
+    line-height: 1; /* Ensure emoji sits correctly */
+    color: var(--primary-color); /* Make the icon stand out */
+    transition: transform var(--transition-speed-fast) ease;
+}
+
+.nav-search-icon:hover {
+    transform: scale(1.1);
+    color: var(--accent-color); /* Change color on hover */
+}
+
+.nav-search-icon::after {
+    display: none; /* Hide underline for the icon */
+}
+
+/* --- Main Content Container --- */
+.main-container {
+    padding: var(--spacing-medium);
+}
+
+/* --- Section Headings --- */
+section h2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    margin: var(--spacing-xxl) 0 var(--spacing-large) 0;
+    color: var(--light-text-color);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Search Bar for Phones --- */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-large);
+    padding: var(--spacing-small);
+    background-color: var(--light-bg-color);
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 4px 10px var(--shadow-light);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phone-search-form {
+    display: flex;
+    width: 100%;
+    gap: var(--spacing-xs);
+}
+
+#phoneSearchInput {
+    flex-grow: 1;
+    padding: var(--spacing-small);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-base);
+    color: var(--dark-text-color);
+    background-color: var(--white-color);
+    transition: border-color var(--transition-speed-fast) ease, box-shadow var(--transition-speed-fast) ease;
+}
+
+#phoneSearchInput:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(56, 178, 172, 0.3);
+    outline: none;
+}
+
+.search-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: var(--spacing-xs) var(--spacing-medium);
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition-speed-fast) ease, transform var(--transition-speed-fast) ease, box-shadow var(--transition-speed-fast) ease;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.search-button:hover {
+    background-color: #2b9a94; /* Darker primary color for hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.search-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background-color: #207a74; /* Even darker for active state */
+}
+
+/* --- Container for Product Grids within each section --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-medium);
+    padding-bottom: var(--spacing-xl);
+}
+
+/* --- Product Box Common Styles --- */
+.phone-box,
+.laptop-box,
+.watch-box {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 4px 10px var(--shadow-light);
+    transition: transform var(--transition-speed-medium) ease, box-shadow var(--transition-speed-medium) ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+}
+
+.phone-box:hover,
+.laptop-box:hover,
+.watch-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px var(--shadow-medium);
+}
+
+/* --- Radio Inputs (Hidden) --- */
+.phone-box input[type="radio"],
+.laptop-box input[type="radio"],
+.watch-box input[type="radio"] {
+    display: none;
+}
+
+/* --- Summary Section (Labels for Radio Inputs) --- */
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-medium);
+    text-align: center;
+    cursor: pointer;
+    flex-grow: 1;
+    justify-content: center;
+    background-color: var(--light-bg-color);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color var(--transition-speed-fast) ease;
+}
+
+.summary:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.summary img {
+    width: 100%;
+    max-width: 220px;
+    height: 190px;
+    object-fit: contain;
+    margin-bottom: var(--spacing-small);
+    transition: transform var(--transition-speed-fast) ease;
+    padding: var(--spacing-xxs);
+}
+
+.summary:hover img {
+    transform: scale(1.03);
+}
+
+.summary h3 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-medium);
+    color: var(--dark-text-color);
+    margin-bottom: var(--spacing-xxs);
+}
+
+.summary p {
+    font-size: var(--font-size-small);
+    color: var(--medium-text-color);
+    padding: 0 var(--spacing-xxs);
+}
+
+/* --- Accordion Details --- */
+.details-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--white-color);
+    padding: 0 var(--spacing-small);
+    transition: max-height var(--transition-speed-medium) ease-in-out, padding var(--transition-speed-medium) ease;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="radio"]:checked + label.summary + .details-content {
+    max-height: 500px; /* Ensure enough height for all details */
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-top: none;
+}
+
+.details-content p {
+    font-size: var(--font-size-small);
+    margin: var(--spacing-xs) 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-xs);
+    color: var(--medium-text-color);
+    width: 100%;
+    text-align: left;
+}
+
+.details-content p:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: var(--spacing-xs);
+}
+
+.details-content p strong {
+    color: var(--dark-text-color);
+}
+
+/* --- Action Button Styles (Buy Button) --- */
+.action-button {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+    padding: var(--spacing-xs) var(--spacing-small);
+    border-radius: var(--border-radius-small);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: var(--spacing-small);
+    width: calc(100% - (2 * var(--spacing-small)));
+    max-width: 250px;
+    align-self: center;
+    transition: background-color var(--transition-speed-fast) ease, transform var(--transition-speed-fast) ease, box-shadow var(--transition-speed-fast) ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.action-button:hover {
+    background-color: #e66a30; /* Darkened accent color for hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.action-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background-color: #d15c26; /* Even darker for active state */
+}
+
+/* --- Form Toggle Sections (Sell & Account) --- */
+.form-toggle-section {
+    display: none;
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xxl);
+    flex-direction: column;
+    align-items: center;
+    /* Transition for section visibility when navigating via URL hash */
+    transition: opacity var(--transition-speed-medium) ease-in-out, transform var(--transition-speed-medium) ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Show the section when its ID is targeted in the URL */
+.form-toggle-section:target {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.form-container {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 8px 20px var(--shadow-medium);
+    padding: var(--spacing-xl);
+    width: 100%;
+    max-width: 600px;
+    margin-top: var(--spacing-medium);
+}
+
+.form-intro {
+    text-align: center;
+    color: var(--medium-text-color);
+    font-size: var(--font-size-medium);
+    margin-bottom: var(--spacing-medium);
+}
+
+.sell-form, .login-form, .signup-form { /* Apply to all forms */
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--dark-text-color);
+    font-size: var(--font-size-base);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+    padding: var(--spacing-small);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-base);
+    color: var(--dark-text-color);
+    background-color: var(--light-bg-color);
+    transition: border-color var(--transition-speed-fast) ease, box-shadow var(--transition-speed-fast) ease;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.3);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: var(--spacing-medium) var(--spacing-large);
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: var(--spacing-medium);
+    transition: background-color var(--transition-speed-fast) ease, transform var(--transition-speed-fast) ease, box-shadow var(--transition-speed-fast) ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    align-self: center;
+    width: auto;
+    min-width: 200px;
+}
+
+.submit-button:hover {
+    background-color: #2b9a94; /* Darker primary color for hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background-color: #207a74; /* Even darker for active state */
+}
+
+/* --- Account Access Tabs Styling --- */
+.auth-tabs {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 8px 20px var(--shadow-medium);
+    overflow: hidden; /* Ensures content doesn't overflow during transitions */
+}
+
+.auth-tabs input[type="radio"] {
+    display: none; /* Hide the actual radio buttons */
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--light-bg-color);
+}
+
+.tab-label {
+    flex: 1;
+    text-align: center;
+    padding: var(--spacing-medium);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--medium-text-color);
+    transition: background-color var(--transition-speed-fast) ease, color var(--transition-speed-fast) ease;
+    position: relative;
+    z-index: 1;
+}
+
+.tab-label::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-color);
+    transform: scaleX(0); /* Hidden by default */
+    transition: transform var(--transition-speed-medium) ease;
+}
+
+.tab-label:hover {
+    color: var(--dark-text-color);
+    background-color: var(--hover-bg-color);
+}
+
+/* Style for the active tab */
+.auth-tabs input[type="radio"]:checked + .tab-label {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.auth-tabs input[type="radio"]:checked + .tab-label::after {
+    transform: scaleX(1); /* Show underline for active tab */
+}
+
+/* Position the tab content */
+.tab-content-wrapper {
+    position: relative;
+    height: auto; /* Adjust height based on content */
+    min-height: 400px; /* Minimum height to prevent jumpiness */
+}
+
+.tab-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--spacing-xl);
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: opacity var(--transition-speed-medium) ease-in-out, transform var(--transition-speed-medium) ease-in-out;
+    pointer-events: none; /* Disable interaction when hidden */
+    visibility: hidden; /* Hide completely when not active */
+}
+
+/* Show login content when tab-login is checked */
+#tab-login:checked ~ .tab-content-wrapper #login-form-content {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* Show signup content when tab-signup is checked */
+#tab-signup:checked ~ .tab-content-wrapper #signup-form-content {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* Adjust for the inactive tab to slide out */
+#tab-login:checked ~ .tab-content-wrapper #signup-form-content {
+    transform: translateX(-100%); /* Slide signup out to the left */
+}
+#tab-signup:checked ~ .tab-content-wrapper #login-form-content {
+    transform: translateX(100%); /* Slide login out to the right */
+}
+
+
+.form-switch-link {
+    text-align: center;
+    margin-top: var(--spacing-medium);
+    font-size: var(--font-size-small);
+    color: var(--medium-text-color);
+}
+
+.form-switch-link a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color var(--transition-speed-fast) ease;
+}
+
+.form-switch-link a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--dark-text-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: var(--spacing-medium);
+    margin-top: var(--spacing-xl);
+    border-top: 1px solid var(--medium-text-color);
+    font-size: var(--font-size-small);
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: var(--spacing-small);
+        text-align: center;
+        padding: var(--spacing-small);
+        top: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: var(--spacing-medium);
+    }
+
+    .main-container {
+        padding: var(--spacing-small);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: var(--spacing-small);
+    }
+
+    section h2 {
+        font-size: var(--font-size-large);
+        margin: var(--spacing-medium) 0;
+    }
+
+    .summary img {
+        max-width: 180px;
+        height: 160px;
+    }
+
+    .summary h3 {
+        font-size: 1rem;
+    }
+
+    .summary p,
+    .details-content p {
+        font-size: 0.8rem;
+    }
+
+    nav li a {
+        font-size: 0.9rem;
+    }
+
+    .action-button {
+        font-size: 0.9rem;
+        padding: var(--spacing-xs);
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: var(--spacing-xs);
+    }
+
+    .form-intro {
+        font-size: 1rem;
+    }
+
+    .main-footer {
+        padding: var(--spacing-small);
+        font-size: 0.8rem;
+    }
+
+    .nav-search-icon {
+        font-size: 1.2rem; /* Smaller icon for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        padding-bottom: var(--spacing-medium);
+    }
+
+    .summary img {
+        height: 140px;
+        max-width: 150px;
+    }
+
+    .summary h3 {
+        font-size: 1rem;
+    }
+
+    .summary p,
+    .details-content p {
+        font-size: 0.8rem;
+    }
+
+    nav li a {
+        font-size: 0.9rem;
+    }
+
+    .action-button {
+        font-size: 0.9rem;
+        padding: var(--spacing-xs);
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: var(--spacing-xs);
+    }
+
+    .form-intro {
+        font-size: 1rem;
+    }
+
+    .main-footer {
+        padding: var(--spacing-small);
+        font-size: 0.8rem;
+    }
+}
