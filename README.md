@@ -6,11 +6,11 @@ This project is a **static clone** of the [Cashify](https://www.cashify.in/) web
 
 ## 📑 Table of Contents
 
-- [Technologies Used](#technologies-used)  
-- [Features](#features)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Contributing](#contributing) 
+- [Technologies Used] 
+- [Features]
+- [Installation] 
+- [Usage]
+- [Contributing]
 
 ---
 
