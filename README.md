@@ -38,3 +38,21 @@ To get a local copy up and running, follow these steps:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/harshpratap777/CSS-PROJECT.git
+*
+## 📷 Usage
+
+- Open `index.html` to explore the Cashify clone.
+- Resize the browser window to check responsive behavior (if implemented).
+- Useful for UI design inspiration and practice for front-end developers.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome and appreciated! Here's how you can help:
+
+1. **Fork the project**
+
+2. **Create your feature branch:**
+   ```bash
+   git checkout -b feature/AmazingFeature
