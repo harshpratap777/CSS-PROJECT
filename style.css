@@ -1478,8 +1478,8 @@ details[open] summary .arrow {
     color: #333;
 }
 .reviews-section a {
-    font-size: 16px;
-    color: #0066cc;
+     color: teal;
+    font-weight: bold;
     text-decoration: none;
 }
 
