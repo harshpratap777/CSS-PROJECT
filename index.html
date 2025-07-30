@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cashify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- Google Fonts for Poppins (used for headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+</head>
+<body>
+<header class="main-header">
+  <div class="top-nav">
+    <img src="./logo.png" alt="Logo" class="logo" />
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search for mobiles, accessories & More" />
+    </div>
+
+    <div class="right-actions">
+      <div class="location">
+        <select>
+          <option value="agra">Agra</option>
+          <option value="ajmer">Ajmer</option>
+          <option value="ahmedabad">Ahmedabad</option>
+          <option value="bengaluru">Bengaluru</option>
+          <option value="bhopal">Bhopal</option>
+          <option value="bhubaneswar">Bhubaneswar</option>
+          <option value="chandigarh">Chandigarh</option>
+          <option value="chennai">Chennai</option>
+          <option value="coimbatore">Coimbatore</option>
+          <option value="delhi">Delhi</option>
+          <option value="dehradun">Dehradun</option>
+          <option value="darjeeling">Darjeeling</option>
+          <option value="gandhinagar">Gandhinagar</option>
+          <option value="gangtok">Gangtok</option>
+          <option value="gorakhpur">Gorakhpur</option>
+          <option value="gurgaon">Gurgaon</option>
+          <option value="jaipur">Jaipur</option>
+          <option value="jaisalmer">Jaisalmer</option>
+          <option value="jodhpur">Jodhpur</option>
+          <option value="kanpur">Kanpur</option>
+          <option value="kanyakumari">Kanyakumari</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="lucknow">Lucknow</option>
+          <option value="ladakh">Ladakh</option>
+          <option value="leh">Leh</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="manali">Manali</option>
+          <option value="mysore">Mysore</option>
+          <option value="nagpur">Nagpur</option>
+          <option value="nainital">Nainital</option>
+          <option value="new_delhi">New Delhi</option>
+          <option value="noida">Noida</option>
+          <option value="pune">Pune</option>
+          <option value="patna">Patna</option>
+          <option value="pondicherry">Pondicherry</option>
+          <option value="shimla">Shimla</option>
+          <option value="surat">Surat</option>
+          <option value="srinagar">Srinagar</option>
+          <option value="varanasi">Varanasi</option>
+          <option value="visakhapatnam">Visakhapatnam</option>
+          <option value="vadodara">Vadodara</option>
+        </select>
+        
+      <!-- Login Button -->
+  <a href="#popup" class="open-btn">Login</a>
+
+  <!-- Login & Signup Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <a href="#" class="close-btn">&times;</a>
+
+      <!-- Checkbox Hack -->
+      <input type="checkbox" id="toggle" hidden>
+
+      <!-- Login Form -->
+      <div class="form login">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button>Login</button>
+        <label for="toggle" class="switch-link">Don't have an account? Sign up</label>
+      </div>
+
+      <!-- Signup Form -->
+      <div class="form signup">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <a href="#thankyou"><button type="button">Sign Up</button></a>
+        <label for="toggle" class="switch-link">Already have an account? Login</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thank You Popup -->
+  <div id="thankyou" class="popup">
+    <div class="popup-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h2>🎉 Thank You!</h2>
+      <p>You have successfully signed up.</p>
+      <a href="#" class="open-btn">Close</a>
+    </div>
+  </div>
+  </div>
+</header>
+    <!-- ✅ Bottom Row with Dropdown Menus -->
+    <nav class="bottom-nav">
+      <ul>
+        <li>
+          <a href="#">All ▼</a>
+          <ul class="dropdown">
+            <li><a href="#">Mobiles</a></li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Watches</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Sell Phone ▼</a>
+          <ul class="dropdown">
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">OnePlus</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Sell Gadgets ▼</a>
+          <ul class="dropdown">
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Smart Watches</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Buy Refurbished Devices ▼</a>
+          <ul class="dropdown">
+            <li><a href="#">Refurbished Phones</a></li>
+            <li><a href="#">Refurbished Laptops</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Find New Gadget ▼</a>
+          <ul class="dropdown">
+            <li><a href="#">Compare Phones</a></li>
+            <li><a href="#">Latest Mobiles</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Buy Laptop ▼</a>
+          <ul class="dropdown">
+            <li><a href="#">MacBook</a></li>
+            <li><a href="#">Gaming Laptops</a></li>
+            <li><a href="#">Windows Laptops</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Cashify Store ▼</a></li>
+        <li><a href="#">More ▼</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <img src="./add 1.webp" alt="Advertisement Image 1">
+                <img src="./add2.webp" alt="Advertisement Image 2">
+                <img src="./add3.webp" alt="Advertisement Image 3">
+                <img src="./ad4.webp" alt="Advertisement Image 4">
+                <img src="./add5.webp" alt="Advertisement Image 5">
+                <img src="./add6.webp" alt="Advertisement Image 6">
+
+                <img src="./add 1.webp" alt="Advertisement Image 1 Duplicate">
+                <img src="./add2.webp" alt="Advertisement Image 2 Duplicate">
+                <img src="./add3.webp" alt="Advertisement Image 3 Duplicate">
+                <img src="./ad4.webp" alt="Advertisement Image 4 Duplicate">
+                <img src="./add5.webp" alt="Advertisement Image 5 Duplicate">
+                <img src="./add6.webp" alt="Advertisement Image 6 Duplicate">
+            </div>
+        </div>
+      </div>
+      
+
+    <section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-container">
+  <div class="service-card">
+    <img src="./sell phone service.webp" alt="Sell Phone">
+    <h3>Sell Phone</h3>
+  </div>
+
+  <div class="service-card">
+    <img src="./buy gadget.webp" alt="Buy Gadget">
+    <h3>Buy Gadget</h3>
+  </div>
+
+  <div class="service-card">
+    <img src="./buy phone.webp" alt="Buy Phone">
+    <h3>Buy Phone</h3>
+  </div>
+
+  <div class="service-card">
+    <img src="./buy laptop.webp" alt="Buy Laptop">
+    <h3>Buy Laptop</h3>
+  </div>
+
+  <div class="service-card">
+    <img src="./repaire phone.webp" alt="Repair Phone">
+    <h3>Repair Phone</h3>
+  </div>
+
+  <div class="service-card">
+    <img src="./reapire laptop.webp" alt="Repair Laptop">
+    <h3>Repair Laptop</h3>
+  </div>
+
+  <div class="service-card">
+    <img src="./find new phone.webp" alt="Find New Phone">
+    <h3>Find New Phone</h3>
+  </div>
+
+  <div class="service-card">
+    <img src="./near by stores.webp" alt="Nearby Stores">
+    <h3>Nearby Stores</h3>
+  </div>
+
+  <div class="service-card">
+    <img src="./buy smart watch.webp" alt="Buy Smart Watch">
+    <h3>Buy Smart Watch</h3>
+  </div>
+
+  <div class="service-card">
+    <img src="./recycle.webp" alt="Recycle Gadget">
+    <h3>Recycle Gadget</h3>
+  </div>
+</div>
+
+
+  </section>
+
+<section class="sell-device-section">
+    <h2>Sell Your Old Device Now</h2>
+    <div class="device-grid">
+      <div class="device-card"><img src="./sell phone service.webp" alt="Phone"/><p>Sell Phone</p></div>
+      <div class="device-card"><img src="./sell laptop.webp" alt="Laptop"/><p>Sell Laptop</p></div>
+      <div class="device-card"><img src="./tv sell.webp" alt="TV"/><p>Sell TV</p></div>
+      <div class="device-card"><img src="sell tablet.webp" alt="Tablet"/><p>Sell Tablet</p></div>
+      <div class="device-card"><img src="./game sell.webp" alt="Gaming"/><p>Sell Gaming Consoles</p></div>
+      <div class="device-card"><img src="./sell smartwatch.webp" alt="Smartwatch"/><p>Sell Smartwatch</p></div>
+      <div class="device-card"><img src="./sell smart speaker.webp" alt="Speakers"/><p>Sell Smart Speakers</p></div>
+      <div class="device-card see-more-card"><a href="#drawer"><img src="./see more.webp" alt="More"/><p>See More</p></a></div>
+    </div>
+  </section>
+
+  <div id="drawer">
+    <a href="#" class="close-drawer-btn">×</a>
+    <h3>More Devices</h3>
+    <div class="drawer-grid">
+      <div class="drawer-card"><img src="./sell DSLR.webp" alt="Camera"/><p>Sell DSLR Camera</p></div>
+      <div class="drawer-card"><img src="./sell AC.webp" alt="AC"/><p>Sell AC</p></div>
+      <div class="drawer-card"><img src="sell refrizator.webp" alt="Refrigerator"/><p>Sell Refrigerator</p></div>
+      <div class="drawer-card"><img src="./sell washing machine.webp" alt="Washing"/><p>Sell Washing Machine</p></div>
+      <div class="drawer-card"><img src="./cashify partner.webp" alt="Partner"/><p>Become Partner</p></div>
+    </div>
+  </div>
+
+    <main class="main-container">
+        <section id="phones">
+            <h2>Buy Refurbished Devices</h2>
+            <div class="product-grid">
+                <!-- Phone 1 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="iphone12mini">
+                    <label for="iphone12mini" class="summary">
+                        <img src="./i phone 12 mini.webp" alt="iPhone 12 Mini" />
+                        <h3>iPhone 12 Mini</h3>
+                        <p>Compact powerhouse with A14 Bionic</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 5.4" Super Retina XDR OLED</p>
+                        <p><strong>Processor:</strong> A14 Bionic chip</p>
+                        <p><strong>Camera:</strong> 12MP (Main) + 12MP (Ultra Wide)</p>
+                        <p><strong>Front Camera:</strong> 12MP TrueDepth</p>
+                        <p><strong>Battery:</strong> Up to 15 hours video playback</p>
+                        <p><strong>Storage:</strong> 64GB / 128GB / 256GB</p>
+                        <p><strong>Price:</strong> ₹59,900 (approx.)</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+<!-- Phone 2 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="iphone14">
+                    <label for="iphone14" class="summary">
+                        <img src="./i phone 14.webp" alt="iPhone 14" />
+                        <h3>iPhone 14</h3>
+                        <p>Reliable performance with crash detection</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 6.1" Super Retina XDR OLED</p>
+                        <p><strong>Processor:</strong> A15 Bionic chip</p>
+                        <p><strong>Camera:</strong> 12MP (Main) + 12MP (Ultra Wide)</p>
+                        <p><strong>Front Camera:</strong> 12MP with autofocus</p>
+                        <p><strong>Battery:</strong> Up to 20 hours video playback</p>
+                        <p><strong>Storage:</strong> 128GB / 256GB / 512GB</p>
+                        <p><strong>Price:</strong> ₹79,900 (approx.)</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+<!-- Phone 3 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="s23ultra">
+                    <label for="s23ultra" class="summary">
+                        <img src="./samsung s23 ultra.webp" alt="Samsung Galaxy S23 Ultra">
+                        <h3>Samsung Galaxy S23 Ultra</h3>
+                        <p>Pro-grade camera & top-tier performance</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 6.8" QHD+ Dynamic AMOLED 2X, 120Hz</p>
+                        <p><strong>Processor:</strong> Snapdragon 8 Gen 2 for Galaxy</p>
+                        <p><strong>Camera:</strong> 200MP (Main) + 12MP + 10MP + 10MP</p>
+                        <p><strong>Front Camera:</strong> 12MP</p>
+                        <p><strong>Battery:</strong> 5000 mAh, 45W Fast Charging</p>
+                        <p><strong>Storage:</strong> Up to 1TB</p>
+                        <p><strong>Price:</strong> ₹1,24,999</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+<!-- Phone 4 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="s22ultra">
+                    <label for="s22ultra" class="summary">
+                        <img src="./samsung s22.webp" alt="Samsung Galaxy S22 Ultra">
+                        <h3>Samsung Galaxy S22 Ultra</h3>
+                        <p>Flagship camera with built-in S Pen</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 6.8" QHD+ Dynamic AMOLED 2X, 120Hz</p>
+                        <p><strong>Processor:</strong> Snapdragon 8 Gen 1</p>
+                        <p><strong>Camera:</strong> 108MP (Main) + 12MP + 10MP + 10MP</p>
+                        <p><strong>Front Camera:</strong> 40MP</p>
+                        <p><strong>Battery:</strong> 5000 mAh, 45W Fast Charging</p>
+                        <p><strong>Storage:</strong> Up to 1TB</p>
+                        <p><strong>Price:</strong> ₹84,999</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+
+                <!-- Phone 5 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="pixel8pro">
+                    <label for="pixel8pro" class="summary">
+                        <img src="./pixcel 8 pro.webp" alt="Google Pixel 8 Pro" />
+                        <h3>Google Pixel 8 Pro</h3>
+                        <p>AI-powered camera and advanced features</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 6.7" Super Actua OLED</p>
+                        <p><strong>Processor:</strong> Google Tensor G3</p>
+                        <p><strong>Camera:</strong> 50MP (Main) + 48MP (Ultra Wide) + 48MP (Telephoto)</p>
+                        <p><strong>Front Camera:</strong> 10.5MP</p>
+                        <p><strong>Battery:</strong> Up to 24 hours (typical)</p>
+                        <p><strong>Storage:</strong> 128GB / 256GB / 512GB / 1TB</p>
+                        <p><strong>Price:</strong> ₹1,06,999 (approx.)</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+
+                <!-- Phone 6 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="oneplus12">
+                    <label for="oneplus12" class="summary">
+                        <img src="./one plus 12.webp" alt="OnePlus 12" />
+                        <h3>OnePlus 12</h3>
+                        <p>Fast and fluid experience with Hasselblad camera</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 6.82" Fluid AMOLED, 120Hz</p>
+                        <p><strong>Processor:</strong> Snapdragon 8 Gen 3</p>
+                        <p><strong>Camera:</strong> 50MP (Main) + 48MP (Ultra Wide) + 64MP (Telephoto)</p>
+                        <p><strong>Front Camera:</strong> 32MP</p>
+                        <p><strong>Battery:</strong> 5400 mAh, 100W SuperVOOC Charge</p>
+                        <p><strong>Storage:</strong> 256GB / 512GB</p>
+                        <p><strong>Price:</strong> ₹64,999 (approx.)</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+
+                <!-- Phone 7 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="xiaomi14ultra">
+                    <label for="xiaomi14ultra" class="summary">
+                        <img src="./xiaomi 14 ultra.webp" alt="Xiaomi 14 Ultra" />
+                        <h3>Xiaomi 14 Ultra</h3>
+                        <p>Leica co-engineered camera with professional imaging</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 6.73" LTPO AMOLED, 120Hz</p>
+                        <p><strong>Processor:</strong> Snapdragon 8 Gen 3</p>
+                        <p><strong>Camera:</strong> 50MP (Main) + 50MP (Ultra Wide) + 50MP (Telephoto) + 50MP (Periscope)</p>
+                        <p><strong>Front Camera:</strong> 32MP</p>
+                        <p><strong>Battery:</strong> 5000 mAh, 90W HyperCharge</p>
+                        <p><strong>Storage:</strong> 256GB / 512GB / 1TB</p>
+                        <p><strong>Price:</strong> ₹99,999 (approx.)</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+
+                <!-- Phone 8 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="iphone15pro">
+                    <label for="iphone15pro" class="summary">
+                        <img src="./i phone 15 pro.webp" alt="iPhone 15 Pro" />
+                        <h3>iPhone 15 Pro</h3>
+                        <p>Titanium design with A17 Pro chip and Action Button</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 6.1" Super Retina XDR with ProMotion</p>
+                        <p><strong>Processor:</strong> A17 Pro chip</p>
+                        <p><strong>Camera:</strong> 48MP (Main) + 12MP (Ultra Wide) + 12MP (Telephoto)</p>
+                        <p><strong>Front Camera:</strong> 12MP TrueDepth</p>
+                        <p><strong>Battery:</strong> Up to 23 hours video playback</p>
+                        <p><strong>Storage:</strong> 128GB / 256GB / 512GB / 1TB</p>
+                        <p><strong>Price:</strong> ₹1,34,900 (approx.)</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+
+                <!-- Phone 9 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="samsungfold5">
+                    <label for="samsungfold5" class="summary">
+                        <img src="./z fold 5.webp" alt="Samsung Galaxy Z Fold 5" />
+                        <h3>Samsung Galaxy Z Fold 5</h3>
+                        <p>Foldable phone with a versatile display and S Pen support</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Main Display:</strong> 7.6" Dynamic AMOLED 2X, 120Hz</p>
+                        <p><strong>Cover Display:</strong> 6.2" Dynamic AMOLED 2X, 120Hz</p>
+                        <p><strong>Processor:</strong> Snapdragon 8 Gen 2 for Galaxy</p>
+                        <p><strong>Camera:</strong> 50MP (Main) + 12MP (Ultra Wide) + 10MP (Telephoto)</p>
+                        <p><strong>Front Camera:</strong> 10MP (Cover) + 4MP (Under Display)</p>
+                        <p><strong>Battery:</strong> 4400 mAh</p>
+                        <p><strong>Storage:</strong> 256GB / 512GB / 1TB</p>
+                        <p><strong>Price:</strong> ₹1,54,999 (approx.)</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+
+                <!-- Phone 10 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="redminote13pro">
+                    <label for="redminote13pro" class="summary">
+                        <img src="./redmi note 13 pro plus.webp" alt="Redmi Note 13 Pro" />
+                        <h3>Redmi Note 13 Pro+ 5G</h3>
+                        <p>Mid-range powerhouse with 200MP camera and fast charging</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 6.67" AMOLED, 120Hz</p>
+                        <p><strong>Processor:</strong> MediaTek Dimensity 7200 Ultra</p>
+                        <p><strong>Camera:</strong> 200MP (Main) + 8MP (Ultra Wide) + 2MP (Macro)</p>
+                        <p><strong>Front Camera:</strong> 16MP</p>
+                        <p><strong>Battery:</strong> 5000 mAh, 120W HyperCharge</p>
+                        <p><strong>Storage:</strong> 256GB / 512GB</p>
+                        <p><strong>Price:</strong> ₹31,999 (approx.)</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+
+                <!-- Phone 11 -->
+                <div class="phone-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="phone_accordion" id="iqoo12">
+                    <label for="iqoo12" class="summary">
+                        <img src="./IQOO 12.webp" alt="iQOO 12" />
+                        <h3>iQOO 12</h3>
+                        <p>Gaming-centric phone with Snapdragon 8 Gen 3 and powerful cooling</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 6.78" LTPO AMOLED, 144Hz</p>
+                        <p><strong>Processor:</strong> Snapdragon 8 Gen 3</p>
+                        <p><strong>Camera:</strong> 50MP (Main) + 50MP (Ultra Wide) + 64MP (Periscope Telephoto)</p>
+                        <p><strong>Front Camera:</strong> 16MP</p>
+                        <p><strong>Battery:</strong> 5000 mAh, 120W FlashCharge</p>
+                        <p><strong>Storage:</strong> 256GB / 512GB</p>
+                        <p><strong>Price:</strong> ₹49,999 (approx.)</p>
+                        <button class="action-button">Buy This Phone</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="laptops">
+            <h2>Refurbished Laptops</h2>
+            <div class="product-grid">
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="laptop1" />
+                    <label for="laptop1" class="summary">
+                        <img src="./Asus vivobook Go.webp" alt="Asus VivoBook Go" />
+                        <h3>Asus VivoBook Go</h3>
+                        <p>Sleek, lightweight laptop ideal for students and everyday use.</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 14-inch Full HD (1920x1080)</p>
+                        <p><strong>Processor:</strong> AMD Ryzen 5 7520U / Intel Core i3 (12th Gen)</p>
+                        <p><strong>Graphics:</strong> Integrated Radeon / Intel UHD</p>
+                        <p><strong>RAM:</strong> 8GB LPDDR5</p>
+                        <p><strong>Storage:</strong> 512GB NVMe SSD</p>
+                        <p><strong>Battery:</strong> Up to 8 hours (42Wh)</p>
+                        <p><strong>Operating System:</strong> Windows 11 Home</p>
+                        <p><strong>Weight:</strong> 1.3 kg</p>
+                        <p><strong>Price:</strong> ₹42,999</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="laptop2" />
+                    <label for="laptop2" class="summary">
+                        <img src="./macboook pro 2021.webp" alt="MacBook Pro 2021" />
+                        <h3>MacBook Pro 2021 (M1 Pro)</h3>
+                        <p>Powerhouse laptop for professionals and creatives with M1 Pro chip.</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 14.2" / 16.2" Liquid Retina XDR</p>
+                        <p><strong>Chip:</strong> Apple M1 Pro / M1 Max</p>
+                        <p><strong>RAM:</strong> 16GB to 64GB</p>
+                        <p><strong>Storage:</strong> 512GB to 2TB SSD</p>
+                        <p><strong>Battery:</strong> Up to 17 hours</p>
+                        <p><strong>OS:</strong> macOS Monterey (Upgradable)</p>
+                        <p><strong>Weight:</strong> 1.6 kg</p>
+                        <p><strong>Price:</strong> From ₹1,74,900</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="laptop3" />
+                    <label for="laptop3" class="summary">
+                        <img src="./macboook pro 2023.webp" alt="MacBook Pro 2023" />
+                        <h3>MacBook Pro 2023 (M2 Pro)</h3>
+                        <p>Blazing-fast MacBook with M2 Pro chip and brilliant display.</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 14.2" Liquid Retina XDR</p>
+                        <p><strong>Chip:</strong> Apple M2 Pro / M2 Max</p>
+                        <p><strong>RAM:</strong> 16GB / 32GB / 64GB</p>
+                        <p><strong>Storage:</strong> 512GB to 4TB SSD</p>
+                        <p><strong>Battery:</strong> Up to 18 hours</p>
+                        <p><strong>OS:</strong> macOS Ventura</p>
+                        <p><strong>Weight:</strong> 1.6 kg</p>
+                        <p><strong>Price:</strong> From ₹1,99,900</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="laptop4" />
+                    <label for="laptop4" class="summary">
+                        <img src="./mackbookair 2024.webp" alt="MacBook Air 2024" />
+                        <h3>MacBook Air 2024 (M3)</h3>
+                        <p>Ultra-portable MacBook with blazing-fast Apple M3 chip.</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 13.6" Liquid Retina</p>
+                        <p><strong>Chip:</strong> Apple M3</p>
+                        <p><strong>RAM:</strong> 8GB / 16GB</p>
+                        <p><strong>Storage:</strong> 256GB to 2TB SSD</p>
+                        <p><strong>Battery:</strong> Up to 18 hours</p>
+                        <p><strong>OS:</strong> macOS Sonoma</p>
+                        <p><strong>Weight:</strong> 1.24 kg</p>
+                        <p><strong>Price:</strong> ₹1,14,900</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="macbook2020">
+                    <label for="macbook2020" class="summary">
+                        <img src="./macbook air 2020.webp" alt="MacBook Air 2020">
+                        <h3>MacBook Air 2020 (M1)</h3>
+                        <p>Thin. Light. Powerful with Apple M1 chip.</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 13.3" Retina with True Tone</p>
+                        <p><strong>Processor:</strong> Apple M1 chip (8-core CPU, 7-core GPU)</p>
+                        <p><strong>RAM:</strong> 8GB (configurable)</p>
+                        <p><strong>Storage:</strong> 256GB SSD (upgradable)</p>
+                        <p><strong>Battery:</strong> Up to 18 hours</p>
+                        <p><strong>Weight:</strong> 1.29 kg</p>
+                        <p><strong>Price:</strong> ₹92,900</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <!-- Laptop 6 -->
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="dellxps15">
+                    <label for="dellxps15" class="summary">
+                        <img src="./dell xps 15.webp" alt="Dell XPS 15" />
+                        <h3>Dell XPS 15</h3>
+                        <p>Premium laptop for creative professionals and power users</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 15.6" FHD+ / 3.5K OLED</p>
+                        <p><strong>Processor:</strong> Intel Core i7 / i9 (13th Gen)</p>
+                        <p><strong>Graphics:</strong> NVIDIA GeForce RTX 4050</p>
+                        <p><strong>RAM:</strong> Up to 64GB DDR5</p>
+                        <p><strong>Storage:</strong> Up to 4TB NVMe SSD</p>
+                        <p><strong>Battery:</strong> 86Whr</p>
+                        <p><strong>Operating System:</strong> Windows 11 Home/Pro</p>
+                        <p><strong>Weight:</strong> 1.92 kg</p>
+                        <p><strong>Price:</strong> From ₹1,50,000</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <!-- Laptop 7 -->
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="hpspectrex360">
+                    <label for="hpspectrex360" class="summary">
+                        <img src="./HP spectre.webp" alt="HP Spectre x360 14" />
+                        <h3>HP Spectre x360 14</h3>
+                        <p>Versatile 2-in-1 convertible laptop with OLED display</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 13.5" OLED, 3K2K (3000x2000)</p>
+                        <p><strong>Processor:</strong> Intel Core Ultra 7</p>
+                        <p><strong>Graphics:</strong> Intel Arc Graphics</p>
+                        <p><strong>RAM:</strong> 16GB / 32GB LPDDR5</p>
+                        <p><strong>Storage:</strong> 1TB NVMe SSD</p>
+                        <p><strong>Battery:</strong> 66Whr</p>
+                        <p><strong>Operating System:</strong> Windows 11 Home/Pro</p>
+                        <p><strong>Weight:</strong> 1.39 kg</p>
+                        <p><strong>Price:</strong> From ₹1,35,000</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <!-- Laptop 8 -->
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="lenovoyoga9i">
+                    <label for="lenovoyoga9i" class="summary">
+                        <img src="./yoga 9i.webp" alt="Lenovo Yoga 9i" />
+                        <h3>Lenovo Yoga 9i</h3>
+                        <p>Premium 2-in-1 with stunning display and powerful audio</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 14" OLED, 2.8K (2880x1800)</p>
+                        <p><strong>Processor:</strong> Intel Core Ultra 7</p>
+                        <p><strong>Graphics:</strong> Intel Arc Graphics</p>
+                        <p><strong>RAM:</strong> 16GB / 32GB LPDDR5X</p>
+                        <p><strong>Storage:</strong> 1TB PCIe Gen4 SSD</p>
+                        <p><strong>Battery:</strong> 75Whr</p>
+                        <p><strong>Operating System:</strong> Windows 11 Home</p>
+                        <p><strong>Weight:</strong> 1.4 kg</p>
+                        <p><strong>Price:</strong> From ₹1,40,000</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <!-- Laptop 9 -->
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="microsoftsurfacepro9">
+                    <label for="microsoftsurfacepro9" class="summary">
+                        <img src="./m surface 9 pro.webp" alt="Microsoft Surface Pro 9" />
+                        <h3>Microsoft Surface Pro 9</h3>
+                        <p>Tablet and laptop versatility with powerful performance</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 13" PixelSense Flow, 120Hz</p>
+                        <p><strong>Processor:</strong> Intel Core i5/i7 (12th Gen) / Microsoft SQ3</p>
+                        <p><strong>RAM:</strong> 8GB / 16GB / 32GB LPDDR4x</p>
+                        <p><strong>Storage:</strong> 128GB to 1TB SSD</p>
+                        <p><strong>Battery:</strong> Up to 15.5 hours</p>
+                        <p><strong>Operating System:</strong> Windows 11 Home</p>
+                        <p><strong>Weight:</strong> 0.879 kg</p>
+                        <p><strong>Price:</strong> From ₹1,00,000</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <!-- Laptop 10 -->
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="asusrogzephyrusg14">
+                    <label for="asusrogzephyrusg14" class="summary">
+                        <img src="./rog g15.jpeg" alt="Asus ROG Zephyrus G14" />
+                        <h3>Asus ROG Zephyrus G14</h3>
+                        <p>Compact gaming laptop with powerful AMD performance</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 14" ROG Nebula Display (QHD+ 165Hz)</p>
+                        <p><strong>Processor:</strong> AMD Ryzen 9</p>
+                        <p><strong>Graphics:</strong> NVIDIA GeForce RTX 4060/4070</p>
+                        <p><strong>RAM:</strong> 16GB / 32GB DDR5</p>
+                        <p><strong>Storage:</strong> 1TB / 2TB PCIe 4.0 SSD</p>
+                        <p><strong>Battery:</strong> 76Whr</p>
+                        <p><strong>Operating System:</strong> Windows 11 Home</p>
+                        <p><strong>Weight:</strong> 1.6 kg</p>
+                        <p><strong>Price:</strong> From ₹1,45,000</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <!-- Laptop 11 -->
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="macbookair15">
+                    <label for="macbookair15" class="summary">
+                        <img src="./macbook air 15.webp" alt="MacBook Air 15 (M2)" />
+                        <h3>MacBook Air 15 (M2)</h3>
+                        <p>Larger display, thin and light with M2 chip</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 15.3" Liquid Retina</p>
+                        <p><strong>Chip:</strong> Apple M2</p>
+                        <p><strong>RAM:</strong> 8GB / 16GB / 24GB</p>
+                        <p><strong>Storage:</strong> 256GB / 512GB / 1TB / 2TB SSD</p>
+                        <p><strong>Battery:</strong> Up to 18 hours</p>
+                        <p><strong>OS:</strong> macOS Sonoma</p>
+                        <p><strong>Weight:</strong> 1.51 kg</p>
+                        <p><strong>Price:</strong> ₹1,34,900</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+                <!-- Laptop 12 -->
+                <div class="laptop-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="laptop_accordion" id="hpomen16">
+                    <label for="hpomen16" class="summary">
+                        <img src="Hp omen 16.webp" alt="HP Omen 16" />
+                        <h3>HP Omen 16</h3>
+                        <p>High-performance gaming laptop with immersive display</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 16.1" FHD 144Hz / QHD 165Hz</p>
+                        <p><strong>Processor:</strong> Intel Core i7 / i9 (13th Gen) / AMD Ryzen 7 / 9</p>
+                        <p><strong>Graphics:</strong> NVIDIA GeForce RTX 4060/4070</p>
+                        <p><strong>RAM:</strong> 16GB / 32GB DDR5</p>
+                        <p><strong>Storage:</strong> 1TB / 2TB PCIe NVMe SSD</p>
+                        <p><strong>Battery:</strong> 83Whr</p>
+                        <p><strong>Operating System:</strong> Windows 11 Home</p>
+                        <p><strong>Weight:</strong> 2.35 kg</p>
+                        <p><strong>Price:</strong> From ₹1,20,000</p>
+                        <button class="action-button">Buy This Laptop</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="watches">
+            <h2> Buy Refurbished  Watches</h2>
+            <div class="product-grid">
+                
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="watch1">
+                    <label for="watch1" class="summary">
+                        <img src="./apple-watch-se2.webp" alt="Apple Watch SE 2" />
+                        <h3>Apple Watch SE 2</h3>
+                        <p>Affordable Apple smartwatch with core health features and crash detection.</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 1.78″ Retina</p>
+                        <p><strong>Storage:</strong> 32GB</p>
+                        <p><strong>Battery:</strong> Up to 18 hours</p>
+                        <p><strong>Key Features:</strong> Crash Detection, Fitness & Sleep Tracking</p>
+                        <p><strong>OS:</strong> watchOS 9+</p>
+                        <p><strong>Price:</strong> ₹29,900</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="watch2">
+                    <label for="watch2" class="summary">
+                        <img src="./apple-watch-series7.webp" alt="Apple Watch Series 7" />
+                        <h3>Apple Watch Series 7</h3>
+                        <p>Elegant smartwatch with a larger always-on display and advanced health tools.</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 1.9″ Always-On Retina</p>
+                        <p><strong>Storage:</strong> 32GB</p>
+                        <p><strong>Battery:</strong> Up to 18 hours</p>
+                        <p><strong>Key Features:</strong> ECG, Blood Oxygen, Fast Charging</p>
+                        <p><strong>OS:</strong> watchOS 8+</p>
+                        <p><strong>Price:</strong> ₹41,900</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="watch3">
+                    <label for="watch3" class="summary">
+                        <img src="./apple-watch-series9.webp" alt="Apple Watch Series 9" />
+                        <h3>Apple Watch Series 9</h3>
+                        <p>Flagship Apple Watch with gesture control and on-device Siri processing.</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 1.9″ Retina</p>
+                        <p><strong>Storage:</strong> 64GB</p>
+                        <p><strong>Battery:</strong> Up to 18 hours</p>
+                        <p><strong>Key Features:</strong> Double Tap Gesture, On-Device Siri, Ultra Wideband</p>
+                        <p><strong>OS:</strong> watchOS 10+</p>
+                        <p><strong>Price:</strong> ₹54,900</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="watch4">
+                    <label for="watch4" class="summary">
+                        <img src="./samsung-galaxy-watch6.webp" alt="Samsung Galaxy Watch 6" />
+                        <h3>Samsung Galaxy Watch 6</h3>
+                        <p>Smartwatch with vibrant AMOLED display and advanced health tracking.</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 1.5″ Super AMOLED</p>
+                        <p><strong>Storage:</strong> 16GB</p>
+                        <p><strong>Battery:</strong> Up to 40 hours</p>
+                        <p><strong>Key Features:</strong> Sleep Coaching, ECG, Fitness & Stress Monitoring</p>
+                        <p><strong>OS:</strong> Wear OS 4</p>
+                        <p><strong>Price:</strong> ₹29,999</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="watch10">
+                    <label for="watch10" class="summary">
+                        <img src="./apple watch series 10.webp" alt="Apple Watch Series 10">
+                        <h3>Apple Watch Series 10</h3>
+                        <p>Next-gen health & performance smartwatch</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 2" Always-On Retina OLED</p>
+                        <p><strong>Features:</strong> ECG, Blood Oxygen, Double Tap gesture</p>
+                        <p><strong>Battery:</strong> Up to 36 hours</p>
+                        <p><strong>Durability:</strong> WR100, Dust Resistant, Crack Resistant</p>
+                        <p><strong>Compatibility:</strong> iOS 17+</p>
+                        <p><strong>Price:</strong> ₹89,900</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <!-- Watch 6 -->
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="galaxywatch7">
+                    <label for="galaxywatch7" class="summary">
+                        <img src="./galaxy watch 7.webp" alt="Samsung Galaxy Watch 7" />
+                        <h3>Samsung Galaxy Watch 7</h3>
+                        <p>Advanced health monitoring with improved battery life</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 1.5" Super AMOLED</p>
+                        <p><strong>Storage:</strong> 32GB</p>
+                        <p><strong>Battery:</strong> Up to 50 hours</p>
+                        <p><strong>Key Features:</strong> BioActive Sensor, Sleep Analysis, Body Composition</p>
+                        <p><strong>OS:</strong> Wear OS 5</p>
+                        <p><strong>Price:</strong> ₹34,999</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <!-- Watch 7 -->
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="fitbitversa4">
+                    <label for="fitbitversa4" class="summary">
+                        <img src="./fitbit 4.jpg" alt="Fitbit Versa 4" />
+                        <h3>Fitbit Versa 4</h3>
+                        <p>Fitness and health tracker with built-in GPS and long battery</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> AMOLED</p>
+                        <p><strong>Storage:</strong> N/A (Cloud Sync)</p>
+                        <p><strong>Battery:</strong> 6+ days</p>
+                        <p><strong>Key Features:</strong> GPS, Heart Rate, SpO2, Sleep Score</p>
+                        <p><strong>OS:</strong> Fitbit OS</p>
+                        <p><strong>Price:</strong> ₹20,999</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <!-- Watch 8 -->
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="garminforerunner265">
+                    <label for="garminforerunner265" class="summary">
+                        <img src="./garmin 265.jpeg" alt="Garmin Forerunner 265" />
+                        <h3>Garmin Forerunner 265</h3>
+                        <p>GPS running smartwatch with AMOLED display and training metrics</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 1.3" AMOLED</p>
+                        <p><strong>Storage:</strong> 8GB</p>
+                        <p><strong>Battery:</strong> Up to 13 days (smartwatch mode)</p>
+                        <p><strong>Key Features:</strong> GPS, Music, Running Dynamics, Training Status</p>
+                        <p><strong>OS:</strong> Garmin OS</p>
+                        <p><strong>Price:</strong> ₹45,990</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <!-- Watch 9 -->
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="googlepixelwatch2">
+                    <label for="googlepixelwatch2" class="summary">
+                        <img src="pixcel watch2.jpeg" alt="Google Pixel Watch 2" />
+                        <h3>Google Pixel Watch 2</h3>
+                        <p>Sleek design with advanced Fitbit health tracking and Wear OS</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> AMOLED</p>
+                        <p><strong>Storage:</strong> 32GB</p>
+                        <p><strong>Battery:</strong> Up to 24 hours (with AOD)</p>
+                        <p><strong>Key Features:</strong> ECG, cEDA sensor for stress, Safety Check</p>
+                        <p><strong>OS:</strong> Wear OS 4</p>
+                        <p><strong>Price:</strong> ₹39,900</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <!-- Watch 10 -->
+                <div class="watch-box">
+                    <div class="image-container">
+                        <img src="./tag.webp" class="tag" alt="Cashify Assured">
+                    </div>
+                    <input type="radio" name="watch_accordion" id="applewatchultra2">
+                    <label for="applewatchultra2" class="summary">
+                        <img src="apple watch ultra 2.jpeg" alt="Apple Watch Ultra 2" />
+                        <h3>Apple Watch Ultra 2</h3>
+                        <p>Rugged and capable smartwatch for extreme adventures</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 1.92" Always-On Retina, 3000 nits</p>
+                        <p><strong>Storage:</strong> 64GB</p>
+                        <p><strong>Battery:</strong> Up to 36 hours (72 hours with Low Power Mode)</p>
+                        <p><strong>Key Features:</strong> Depth gauge, Water temperature sensor, Custom Action Button</p>
+                        <p><strong>OS:</strong> watchOS 10+</p>
+                        <p><strong>Price:</strong> ₹89,900</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <!-- Watch 11 -->
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="amazfitgts4">
+                    <label for="amazfitgts4" class="summary">
+                        <img src="./gts 4.jpeg" alt="Amazfit GTS 4" />
+                        <h3>Amazfit GTS 4</h3>
+                        <p>Stylish smartwatch with comprehensive health tracking and long battery</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 1.75" AMOLED</p>
+                        <p><strong>Storage:</strong> N/A (Cloud Sync)</p>
+                        <p><strong>Battery:</strong> Up to 8 days (typical use)</p>
+                        <p><strong>Key Features:</strong> GPS, BioTracker 4.0 PPG sensor, Bluetooth Calling</p>
+                        <p><strong>OS:</strong> Zepp OS 2.0</p>
+                        <p><strong>Price:</strong> ₹16,999</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+                <!-- Watch 12 -->
+                <div class="watch-box">
+                      <div class="image-container">
+
+  <img src="./tag.webp" class="tag" alt="Cashify Assured">
+</div>
+                    <input type="radio" name="watch_accordion" id="huaweiwatchgt4">
+                    <label for="huaweiwatchgt4" class="summary">
+                        <img src="./huwai gt4.jpeg" alt="Huawei Watch GT 4" />
+                        <h3>Huawei Watch GT 4</h3>
+                        <p>Elegant smartwatch with advanced health management and long battery</p>
+                    </label>
+                    <div class="details-content">
+                        <p><strong>Display:</strong> 1.43" AMOLED</p>
+                        <p><strong>Storage:</strong> 32GB</p>
+                        <p><strong>Battery:</strong> Up to 14 days</p>
+                        <p><strong>Key Features:</strong> TruSeen 5.5+ heart rate, Sleep monitoring, Cycle Calendar</p>
+                        <p><strong>OS:</strong> HarmonyOS</p>
+                        <p><strong>Price:</strong> ₹20,999</p>
+                        <button class="action-button">Buy This Watch</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+<section class="exclusive-stores">
+  <h2>Cashify Exclusive Stores</h2>
+
+  <!-- Dropdown for selecting store -->
+  <div class="store-dropdown">
+    <label for="store-select">Choose Your City:</label>
+    <select id="store-select">
+      <option>Delhi</option>
+      <option>Mumbai</option>
+      <option>Bangalore</option>
+      <option>Pune</option>
+      <option>Jaipur</option>
+      <option>Chennai</option>
+      <option>Kolkata</option>
+    </select>
+  </div>
+
+  <!-- Store cards -->
+  <div class="stores-container">
+    <div class="store-card">
+      <h3>Delhi</h3>
+      <div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+      <p>Visit our exclusive store in Delhi for instant deals.</p>
+    </div>
+
+    <div class="store-card">
+      <h3>Mumbai</h3>
+      <div class="rating">⭐⭐⭐⭐ 4.5</div>
+      <p>Buy and sell gadgets at our Mumbai store.</p>
+    </div>
+
+    <div class="store-card">
+      <h3>Bangalore</h3>
+      <div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+      <p>Fast phone repair and trade-ins in Bangalore.</p>
+    </div>
+
+    <div class="store-card">
+      <h3>Pune</h3>
+      <div class="rating">⭐⭐⭐⭐ 4.6</div>
+      <p>Get the best price for your gadgets in Pune.</p>
+    </div>
+
+    <div class="store-card">
+      <h3>Jaipur</h3>
+      <div class="rating">⭐⭐⭐⭐ 4.3</div>
+      <p>Find our exclusive store for gadgets in Jaipur.</p>
+    </div>
+  </div>
+</section>
+<section class="stats-section">
+    <div class="stats-text">
+      <h1>Trusted by 152.5 Lac + Happy Users and Major Brands since 2015</h1>
+    </div>
+    <div class="stats-box">
+      <div class="stat">
+        <div class="icon">₹</div>
+        <p class="value">11437.2Cr.</p>
+        <span>Cash Given</span>
+      </div>
+      <div class="stat">
+        <div class="icon">📱</div>
+        <p class="value">169.44Lac</p>
+        <span>Gadgets Encased</span>
+      </div>
+    </div>
+    
+  <section class="testimonials">
+    <div class="testimonial-card">
+      <div class="quote"></div>
+      <p>Sold off my phone very easily and got the payment on the spot. Best experience so far.</p>
+      <div class="user">
+        <img src="https://i.pravatar.cc/50?img=1" alt="User">
+        <div>
+          <h4>Tarun Singh Verma</h4>
+          <span>New Delhi</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="quote"></div>
+      <p>Well trained staff. Overall a positive experience in selling my phone at Cashify.</p>
+      <div class="user">
+        <img src="https://i.pravatar.cc/50?img=2" alt="User">
+        <div>
+          <h4>Karan Sharma</h4>
+          <span>Delhi NCR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="quote"></div>
+      <p>No complaints, sold my phone very easily here. Definitely worth a try.</p>
+      <div class="user">
+        <img src="https://i.pravatar.cc/50?img=3" alt="User">
+        <div>
+          <h4>Abhiyash</h4>
+          <span>New Delhi</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="quote"></div>
+      <p>Payment was very instant and the whole process was quick. Will recommend it.</p>
+      <div class="user">
+        <img src="https://i.pravatar.cc/50?img=4" alt="User">
+        <div>
+          <h4>Vinit Kumar</h4>
+          <span>New Delhi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  </section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <img src="https://s3no.cashify.in/estore/dc841f6d633d49059eaf532610365370.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/21b181db0bd44f539f6fb12d7734d2ae.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/40a4aae2315a4ca59eb9c4bf9cf88e41.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/e148f87dee934d308576090c81bc807e.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/300ceff92e0e41cea6c53f49137243cf.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/6b62e37c95e04ea28df2e4ecb148b95b.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/2d070f10356049d1b2ce515c9b512b78.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/21e1fe99e6084445bf65537f8c587d13.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/7f38fba7b800486797e3daa5e3e382ac.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/66ae540902d94f02997f11389c1cf63e.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/a2e34a6d8a9e4b679db292da08fb1848.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/a1947f645ab3466c9b315b70892968ca.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/d6b3fc009a3944bb9604bba8cd0ecea9.webp?p=default&s=lg" alt="img">
+    <img src="https://s3no.cashify.in/estore/41cd19daf698432ab359b16d07c2dfa5.webp?p=default&s=lg" alt="img">
+  </div>
+</div>
+
+  <!-- Section 1 -->
+  <section class="shop-section">
+    <div class="shop-header">
+      <h2>Better For Pocket. Buy Refurbished</h2>
+      <a href="#" class="shop-link">See all</a>
+    </div>
+
+    <div class="shop-cards">
+      <details class="shop-card">
+        <summary><img src="./Refurbished-Edge-50-Pro-features.avif" alt="Refurbished Edge 50 Pro" /></summary>
+        <p class="shop-desc">Edge 50 Pro: Premium features at a refurbished price.</p>
+      </details>
+
+      <details class="shop-card">
+        <summary><img src="./Refurbished-Nothing-Phone-2-Next-Gen-Glyph-Matrix-Big-Value.avif" alt="Refurbished Nothing Phone 2" /></summary>
+        <p class="shop-desc">Nothing Phone 2: Unique design, next-gen performance.</p>
+      </details>
+
+      <details class="shop-card">
+        <summary><img src="./Refurbished-POCO-X7-Pro-at-low-price.avif" alt="Refurbished POCO X7 Pro" /></summary>
+        <p class="shop-desc">POCO X7 Pro: Flagship specs, affordable refurbished deal.</p>
+      </details>
+
+      <details class="shop-card">
+        <summary><img src="./Battery-Beast-Refurbished-iQOO-Z10-With-7300-mAh-90W-Fast-Charge.avif" alt="Refurbished iQOO Z10" /></summary>
+        <p class="shop-desc">iQOO Z10: Massive battery and fast charging in a refurbished package.</p>
+      </details>
+
+      <details class="shop-card">
+        <summary><img src="./best-Xiaomi-12-Pro-features.avif" alt="Refurbished Xiaomi 12 Pro" /></summary>
+        <p class="shop-desc">Xiaomi 12 Pro: Top-tier camera and display, now refurbished.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="shop-section">
+    <div class="shop-header">
+      <h2>Be Smart. Sell Smart</h2>
+      <a href="#" class="shop-link">See all</a>
+    </div>
+
+    <div class="shop-cards">
+      <details class="shop-card">
+        <summary><img src="./3-Best-Alternative-For-Oppo-Find-X.avif" alt="Best Alternatives for Oppo Find X" /></summary>
+        <p class="shop-desc">Explore top alternatives for your Oppo Find X resale.</p>
+      </details>
+
+      <details class="shop-card">
+        <summary><img src="./t-Realme-14-Pro-Plus-Resale-Value.avif" alt="Realme 14 Pro Plus Resale Value" /></summary>
+        <p class="shop-desc">Get the best resale value for your Realme 14 Pro Plus.</p>
+      </details>
+
+      <details class="shop-card">
+        <summary><img src="./Vivo-V-vs-Vivo-T-Series-Resale-Value-In-2025.avif" alt="Vivo V vs T Series Resale Value" /></summary>
+        <p class="shop-desc">Compare Vivo V and T Series for top resale in 2025.</p>
+      </details>
+
+      <details class="shop-card">
+        <summary><img src="./Xiaomi-13-Pro-at-low-price.avif" alt="Xiaomi 13 Pro Resale" /></summary>
+        <p class="shop-desc">Sell your Xiaomi 13 Pro for a great price.</p>
+      </details>
+
+      <details class="shop-card">
+        <summary><img src="./Battery-Beast-Refurbished-iQOO-Z10-With-7300-mAh-90W-Fast-Charge.avif" alt="iQOO Z10 Resale" /></summary>
+        <p class="shop-desc">iQOO Z10: High battery resale value, quick deals.</p>
+      </details>
+    </div>
+  </section>
+<section class="hot-deals">
+  <h2>Hot Deals</h2>
+  <p class="subtitle">Exciting offers for more value</p>
+
+  <div class="deal-cards">
+    <div class="deal-card pink">
+      
+      <img src="./buy offer.webp" alt="Buyback">
+      
+    </div>
+
+    <div class="deal-card green">
+      
+      <img src="./echange offer.webp" alt="Exchange">
+      
+    </div>
+
+    <div class="deal-card purple">
+      
+      <img src="./ref devices.webp" alt="Refurbished">
+     
+    </div>
+
+    <div class="deal-card yellow">
+     
+      <img src="./repaire offer.webp" alt="Repair">
+     
+    </div>
+  </div>
+</section>
+
+
+
+<section class="faq-section">
+  <div class="faq-header">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-tabs">
+      <button class="active">SellSmart</button>
+      <button>SmartBuy</button>
+      <button>Repair/Others</button>
+    </div>
+  </div>
+
+  <div class="faq-list">
+    <details>
+      <summary>
+        <span>What should I do if my Amazon voucher shows “Already Redeemed”?</span>
+        <span class="arrow">▼</span>
+      </summary>
+      <p>You should contact Amazon support to verify your voucher status and request assistance.</p>
+    </details>
+
+    <details>
+      <summary>
+        <span>What documents do you need to sell old mobile phone on Cashify?</span>
+        <span class="arrow">▼</span>
+      </summary>
+      <p>You need a valid ID proof and the invoice of your mobile phone for verification.</p>
+    </details>
+
+    <details>
+      <summary>
+        <span>What if my pickup is delayed?</span>
+        <span class="arrow">▼</span>
+      </summary>
+      <p>If your pickup is delayed, you can reschedule or contact customer support for updates.</p>
+    </details>
+  </div>
+
+  <div class="faq-footer">
+    <a href="#">Load More FAQs</a>
+  </div>
+</section>
+
+
+<section class="trending-articles">
+  <div class="header">
+    <h2>Trending Articles</h2>
+    <a href="#">See all</a>
+  </div>
+  
+  <div class="articles">
+    <!-- Article 1 -->
+    <article class="card">
+      <img src="./applecare.webp" alt="AppleCare+">
+      <h3>What Is AppleCare+ And Do You Really Need It? Smart Move Or Waste?</h3>
+      <p>If you’ve ever bought an iPhone, Mac, or any Apple product, chances are you might have been offered AppleCare+ at checkout...</p>
+      <span class="date">28th Jul 2025</span>
+    </article>
+
+    <!-- Article 2 -->
+    <article class="card">
+      <img src="./iQOO-Z10R-vs-Moto-G96.webp" alt="iQOO Z10R vs Moto G96">
+      <h3>iQOO Z10R vs Moto G96: Ultimate Comparison For Budget Buyers!</h3>
+      <p>Even though purchasing power has increased over the past decade, people still look for budget smartphones...</p>
+      <span class="date">28th Jul 2025</span>
+    </article>
+
+    <!-- Article 3 -->
+    <article class="card">
+      <img src="Untitled-design-2025-07-28T174216.857.webp" alt="ChatGPT vs Perplexity">
+      <h3>Perplexity vs ChatGPT: Which AI Gives Better Answers?</h3>
+      <p>Looking for the go-to AI tool that solves all your doubts and gives you the best content in seconds? Well...</p>
+      <span class="date">28th Jul 2025</span>
+    </article>
+  </div>
+  
+</section>
+<section class="news-list">
+  <div class="news-item">
+    <img src="./phones-better-than-iQOO-Z10R.webp" alt="Top 5 Phones">
+    <div class="content">
+      <h4>Top 5 Phones Offering More Than iQOO Z10R!</h4>
+      <span class="date">25th Jul 2025</span>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <img src="./REALME-15-PRO.webp" alt="Realme 15 Pro">
+    <div class="content">
+      <h4>5 Reasons Why Realme 15 Pro Is Worth Buying Under 30000</h4>
+      <span class="date">25th Jul 2025</span>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <img src="./Snapdragon-8-Elite-1-1.webp" alt="Snapdragon 8 Elite vs 8s Gen 4">
+    <div class="content">
+      <h4>Snapdragon 8 Elite Vs 8s Gen 4: Full Performance Comparison [2025]</h4>
+      <span class="date">25th Jul 2025</span>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <img src="./iOS-26-Feature-1.webp" alt="iOS 26 Update">
+    <div class="content">
+      <h4>What’s New In iOS 26 Beta Update: Features, Bug Fixes And UI Changes</h4>
+      <span class="date">24th Jul 2025</span>
+    </div>
+  </div>
+</section>
+<section class="reviews-section">
+    <h2>Recent Reviews</h2>
+    <a href="#">See all</a>
+
+
+  <div class="carousel">
+    <div class="card">
+      <img src="./Apple-iPhone-15 review.webp" alt="Apple iPhone 15 review">
+      <h3>Apple iPhone 15 Long‑Term Review: Still Worth Every Rupee</h3>
+      <span>28th Jul 2025</span>
+    </div>
+    <div class="card">
+      <img src="./vivo v50.webp" alt="Vivo V50 review">
+      <h3>Vivo V50 Elite Edition Review: A Photographer’s Dream</h3>
+      <span>21st Jul 2025</span>
+    </div>
+    <div class="card">
+      <img src="./Samsung-Galaxy-S24-Plus review.webp" alt="Samsung Galaxy S24 Plus">
+      <h3>Samsung Galaxy S24 Plus Long‑Term Review: Still A Smart Buy Or…</h3>
+      <span>14th Jul 2025</span>
+    </div>
+    <div class="card">
+      <img src="./gogle pixcl 8 pro.webp" alt="Google Pixel 8 Pro">
+      <h3>Google Pixel 8 Pro Long‑Term Review: Smarter Than Ever in 2025?</h3>
+      <span>7th Jul 2025</span>
+    </div>
+    <div class="card">
+      <img src="./Vivo-T4-Ultra-22.webp" alt="Vivo T4 Ultra">
+      <h3>Vivo T4 Ultra Review: Powerful Performance, Pro‑Level Camera</h3>
+      <span>30th Jun 2025</span>
+    </div>
+    <div class="card">
+      <img src="./Poco-F7.webp" alt="Poco F7">
+      <h3>Poco F7 Review: A Mid‑Range Flagship That Delivers Big</h3>
+      <span>24th Jun 2025</span>
+    </div>
+    <div class="card">
+      <img src="./Realme-GT-7-1.webp" alt="Realme GT 7">
+      <h3>Realme GT 7 Review: Performance Meets AI Power</h3>
+      <span>16th Jun 2025</span>
+    </div>
+    <div class="card">
+      <img src="./one plus 12.webp" alt="OnePlus 12">
+      <h3>OnePlus 12 Long‑Term Review: Is It Worth In 2025?</h3>
+      <span>16th Jun 2025</span>
+    </div>
+    <div class="card">
+      <img src="./Realme-Buds-Air-7-Pro.webp" alt="Realme Buds Air 7 Pro">
+      <h3>Realme Buds Air 7 Pro Review: Tuning In To Excellence</h3>
+      <span>5th Jun 2025</span>
+    </div>
+    <div class="card">
+      <img src="./Realme-14-Pro-8.webp" alt="Realme 14 Pro Plus">
+      <h3>Realme 14 Pro Plus Long‑Term Review: The New Mid‑Range…</h3>
+      <span>25th May 2025</span>
+    </div>
+  </div>
+</section>
+
+<section class="download-section">
+  <div class="text-content">
+    <h2>Download The App</h2>
+    <p>Sell your old phone | Buy top-quality refurbished phones | Get your phone repaired</p>
+    <div class="buttons">
+      <a href="#" class="btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+      </a>
+      <a href="#" class="btn">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
+      </a>
+    </div>
+  </div>
+  <div class="image-content">
+    <img src="./app download.webp" alt="Person pointing" class="person" />
+  </div>
+</section>
+<!-- Main Heading -->
+<h1 class="heading h1">Sell Your Old Phone & Buy Old Mobile Phones with Cashify</h1>
+
+<!-- First Paragraph -->
+<p class="paragraph">
+    Cashify is the best platform if you are looking to sell your old mobile phone. It offers a hassle-free experience, and you can sell your old mobile phone in less than five minutes.
+</p>
+
+<!-- Second Paragraph -->
+<p class="paragraph">
+    When you sell an old mobile phone with Cashify, you can easily upgrade to a new one. Cashify ensures that the phones you sell are in top condition so that people get good quality when they buy them.
+</p>
+
+<!-- Section: Sell Your Old Phone -->
+<h2 class="heading h2">Sell Your Old Phone</h2>
+<p class="paragraph">
+    Ready to sell old mobile phone? With Cashify, you can easily get cash for your old mobile phone without leaving home. Just share your phone's details, and we'll offer you the best price.
+</p>
+<p class="paragraph">
+    It's that simple:
+</p>
+<ul class="unordered-list">
+    <li class="list">
+        <span><strong class="font-medium">Get an Instant Quote:</strong> Enter your phone's details on our website or app.</span>
+    </li>
+    <li class="list">
+        <span><strong class="font-medium">Free Home Pickup:</strong> Book a convenient time, and we'll pick up your phone from your doorstep.</span>
+    </li>
+    <li class="list">
+        <span><strong class="font-medium">Instant Cash Payment:</strong> Receive cash on the spot upon pickup.</span>
+    </li>
+</ul>
+
+<!-- Section: Which Mobile Phone Brands Can Be Sold and Bought On Cashify? -->
+<h2 class="heading h2">Which Mobile Phone Brands Can Be Sold and Bought On Cashify?</h2>
+<p class="paragraph">
+    You can buy or sell almost all mobile phone brands in India. Popular laptops, tablets, and gaming consoles are also available on the go. Cashify has more than 20 phone brands, and for every device you sell. Apart from this, we offer:
+</p>
+<ul class="unordered-list">
+    <li class="list">Assured sale at best price</li>
+    <li class="list">Hassle free</li>
+    <li class="list">Free home pick up</li>
+    <li class="list">Instant cash payment on pickup</li>
+</ul>
+
+<!-- Section: Buy Old Mobile Phones -->
+<h2 class="heading h2">Buy Old Mobile Phones</h2>
+<p class="paragraph">
+    Cashify offers an affordable way to upgrade to a new phone. You can explore the vast selection of refurbished phones at low price. With Cashify, you can be assured that you will get a highly functional phone. All refurbished phones are tested with proper quality checks to maintain the quality. On top of that, you get:
+</p>
+<ul class="unordered-list">
+    <li class="list">High-quality refurbished phones at affordable prices</li>
+    <li class="list">32-point quality checks</li>
+    <li class="list">6-month warranty on all refurbished phones</li>
+    <li class="list">15 days replacement</li>
+</ul>
+<p class="paragraph">
+    Upgrade your phone without stretching your budget. Discover our wide range of old mobile phones and get yours today at nearly half the price.
+</p>
+
+<!-- Section: How to Buy Old Phone From Cashify -->
+<h2 class="heading h2">How to Buy Old Phone From Cashify</h2>
+<ul class="unordered-list">
+    <li class="list">You can visit the website or App</li>
+    <li class="list">Click on the Buy Phone section to select the brand you want to purchase.</li>
+    <li class="list">Choose the model and the condition- Fair, Good, Superb. Based on your choice, the price will be displayed on the screen.</li>
+    <li class="list">Enter your address and payment mode.</li>
+    <li class="list">Make the payment and that’s it! Your device will be delivered to your doorstep.</li>
+</ul>
+
+<p class="paragraph">
+    With Cashify, your privacy is safe. We carefully clean every old phone to ensure that all your data is removed and secured.
+</p>
+<p class="paragraph">
+    You don’t need to worry about your old phone’s brand when selling or buying through Cashify. We accept phones from most brands, so selling is easy. Pick the phone category, brand, and model you want to sell. You can also choose your brand from the quick links below.
+</p>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <!-- Logo & Social Media -->
+      <div class="footer-about">
+        <img src="./logo.png" alt="Cashify Logo" class="footer-logo" />
+        <p class="follow-text">Follow us on</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer Columns -->
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Sell Phone</a></li>
+            <li><a href="#">Sell Television</a></li>
+            <li><a href="#">Sell Smart Watch</a></li>
+            <li><a href="#">Repair Phone</a></li>
+            <li><a href="#">Recycle Phone</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Releases</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Sell Device</h3>
+          <ul>
+            <li><a href="#">Mobile Phone</a></li>
+            <li><a href="#">Laptop</a></li>
+            <li><a href="#">Tablet</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Help & Support</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>More Info</h3>
+          <ul>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">E-Waste Policy</a></li>
+          </ul>
+
+          <button class="chat-btn">
+            <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z">
+              </path>
+            </svg>
+            Chat with us
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="footer-info">
+        <p><strong>Registered Office:</strong> Manak Waste Management Pvt Ltd., 55, 2nd Floor, Lane-2, Westend Marg,
+          Saidulajab, Near Saket Metro Station, New Delhi-110030, India. Support-7290068900</p>
+        <p>For compliance queries: <a href="mailto:grievanceofficer@cashify.in">grievanceofficer@cashify.in</a></p>
+        <p class="disclaimer">** All product names and logos are property of their respective owners.</p>
+      </div>
+
+      <div class="footer-badge">
+        <img src="./botttom note.svg" alt="Device Safety" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Cashify. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
