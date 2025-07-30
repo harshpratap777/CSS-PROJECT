@@ -114,7 +114,7 @@ header {
 }
 
 .top-nav .logo {
-    height: 40px; /* Fixed height for logo is acceptable */
+    height: 60px; /* Fixed height for logo is acceptable */
     flex-shrink: 0;
     transition: var(--transition-fast);
 }
